@@ -1,0 +1,103 @@
+.mix2{
+    border-radius: 12%;
+    border: 1px solid ;
+}
+
+.man {
+    background: linear-gradient(300deg, #94949490, #0a0a0a90, #389080);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    
+  }
+  .anim{
+    
+    animation:  moveinleft 5s;
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes moveinleft 
+  {
+    0%{
+      opacity: 0;
+      transform: translateX(-100px);
+
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0);
+
+    }
+    
+  }
+  @keyframes moveright {
+    0%{
+      opacity: 0;
+      transform: translate(100px);
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
+    
+  }
+  @keyframes moveup {
+    0%{
+      opacity: 0;
+      transform: translate(-100px);
+    }
+    100%{
+      opacity: 0;
+      transform: translate(0);
+    }
+    
+  }
+  .btn{
+    animation-name: moveup;
+    animation-duration: 3s;
+  }
+  .tam{
+animation-name: moveright;
+animation-duration: 5s;
+
+  }
+
+.wit{
+font-weight: 700;
+font-size: 30px;
+}
+.list{
+  list-style: none;
+}
+.img{
+  border-radius: 10%;
+}
+
+.line{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.apg{
+  margin-left: 50px;
+  margin-right:0 ;
+}
+.let{
+  font-family: 'Belanosima', sans-serif;
+}
+@media(max-width:580px){
+ body{
+  margin: 0;
+  padding: 0;
+ }
+
+}
